@@ -1,0 +1,76 @@
+name: nightsuntv
+description: "NightsunTV — ten thousand free live TV channels from around the world."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_riverpod: ^3.5.0
+  shared_preferences: ^2.5.6
+  http: ^1.6.0
+  path_provider: ^2.1.6
+  video_player: ^2.14.1
+  cached_network_image: ^4.0.7
+  flutter_svg: ^2.5.0
+  wakelock_plus: ^1.8.2
+  screen_brightness: ^2.1.11
+  volume_controller: ^3.7.1
+  connectivity_plus: ^7.3.2
+  url_launcher: ^6.3.3
+  share_plus: ^13.3.1
+  package_info_plus: ^10.2.2
+  simple_pip_mode: ^2.0.0
+  crypto: ^3.0.8
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# The 2.5.x/2.3.x Android implementations moved to JNI and require a native
+# build. Pinning the last pure-Kotlin releases keeps the build reproducible on
+# this arm64 build host and behaves identically for the APIs used here.
+dependency_overrides:
+  shared_preferences_android: 2.4.27
+  path_provider_android: 2.2.16
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/catalog.json
+    - assets/data/catalog_meta.json
+    - assets/branding/app_icon_512.png
+    - assets/branding/splash_mark.png
+
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-400.ttf
+          weight: 400
+        - asset: assets/fonts/Manrope-500.ttf
+          weight: 500
+        - asset: assets/fonts/Manrope-600.ttf
+          weight: 600
+        - asset: assets/fonts/Manrope-700.ttf
+          weight: 700
+        - asset: assets/fonts/Manrope-800.ttf
+          weight: 800
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora-400.ttf
+          weight: 400
+        - asset: assets/fonts/Sora-500.ttf
+          weight: 500
+        - asset: assets/fonts/Sora-600.ttf
+          weight: 600
+        - asset: assets/fonts/Sora-700.ttf
+          weight: 700
+        - asset: assets/fonts/Sora-800.ttf
+          weight: 800

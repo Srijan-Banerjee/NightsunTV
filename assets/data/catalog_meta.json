@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-23T11:33:11Z",
+  "sha256": "fd6a04e64f6a9f5a1808013e3b0622773ee5092d69e4ae225d41a35950706380",
+  "bytes": 8891088,
+  "counts": {
+    "channels": 15239,
+    "sources": 26570,
+    "countries": 184,
+    "languages": 180,
+    "categories": 29,
+    "withLogo": 13809,
+    "multiSource": 4154,
+    "nsfw": 2
+  },
+  "topCountries": [
+    {
+      "code": "US",
+      "channels": 4238
+    },
+    {
+      "code": "IN",
+      "channels": 823
+    },
+    {
+      "code": "RU",
+      "channels": 482
+    },
+    {
+      "code": "DE",
+      "channels": 387
+    },
+    {
+      "code": "IT",
+      "channels": 543
+    },
+    {
+      "code": "BR",
+      "channels": 279
+    },
+    {
+      "code": "UK",
+      "channels": 244
+    },
+    {
+      "code": "ES",
+      "channels": 246
+    },
+    {
+      "code": "FR",
+      "channels": 218
+    },
+    {
+      "code": "CA",
+      "channels": 140
+    }
+  ]
+}
